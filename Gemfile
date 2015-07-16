@@ -1,12 +1,26 @@
 source 'https://rubygems.org'
 
+# Added Gems
+# Amazon SDK (Less than 2.0 for Spree)
+gem 'aws-sdk', '< 2.0'
+# Keep Secret Keys
+gem 'figaro'
+
+# Gems for production only
+group :production do
+  # Allows Heroku to serve up public files
+  gem 'rails_12factor'  
+end
+
 # Set Ruby Version
 ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+# Install postgresql
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
