@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'aws-sdk', '< 2.0'
 # Keep Secret Keys
 gem 'figaro'
+# Mailer for spree
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
 
 # Gems for production only
 group :production do
