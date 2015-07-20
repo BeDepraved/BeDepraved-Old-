@@ -7,6 +7,8 @@ gem 'aws-sdk', '< 2.0'
 gem 'figaro'
 # Mailer for spree
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
+# Font Awsome
+gem 'font-awesome-sass'
 
 # Gems for production only
 group :production do
