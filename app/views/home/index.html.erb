@@ -1,4 +1,4 @@
-<div class="row" id="row-1" style="background-color: #3D3D29; color: #FFFFFF;">
+<div class="row myrow" id="row-1" style="background-color: #3D3D29; color: #FFFFFF;">
   <div class="col-md-8 text-center" id="div-1.1" style="margin-top: 20px;">
     <img class="img-responsive" src="<%= image_path 'Row-o-Cards.png' %>" alt="" />
   </div>
@@ -84,7 +84,7 @@
 
     </p>
     <center>
-      <a href="https://s3-us-west-2.amazonaws.com/bedepraved-bucket/Print+n+Play+-+Utterless+Depravity.pdf" role="button" type="button" class="btn btn-danger btn-lg" target=”_blank” onclick=”_gaq.push([‘_trackEvent’,’Button’,’Clicked’,’PnP Download’]);”>Print Your Own</a>
+      <a href="https://s3-us-west-2.amazonaws.com/bedepraved-bucket/Print+n+Play+-+Utterless+Depravity.pdf" role="button" type="button" class="btn btn-danger btn-lg" target=”_blank” id="download">Print Your Own</a>
     </center>
   </div>
   <div class="col-md-3" id="div-4.2" style="margin-top: 20px; margin-bottom: 20px">
@@ -148,52 +148,7 @@
 
 <div class="row" id="row-6" style="background-color: #FFFFFF; color: #3D3D29; display: none;">
   <div class="col-md-5 col-md-offset-1" id="div-6.1" style="margin-top: 20px; margin-bottom: 20px">
-    <span style="font-size: 2em; font-weight: 900;">Stupid Questions & Brilliant Answers</span>
-    <!-- Q&A Code -->
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 20px;">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              How do I play Utterless Depravity?
-            </a>
-          </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-            <a href="https://en.wikipedia.org/wiki/RTFM">RTFM</a> - and the F does not stand for following! <a href="#">Here is a link to the M!</a>
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-          <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              I have a great idea for a card can I send it to you?
-            </a>
-          </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body">
-            Yes you can, we encourage it. Use the form to the right (or below if you're on a cell phone) to send us your idea. We will not respond to you though. We will keep track of your email address with your submission, if your card gets a place in a deck you will be rewarded with something special as a thanks. No monetary compensations though, a warm thank you and something cool from our inventory.
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-          <h4 class="panel-title">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              I'm offended by your game who should I complain to?
-            </a>
-          </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-          <div class="panel-body">
-            God maybe, we don't care. This game is protected under the First Amendment. It was made to be offensive, that was our goal. If you still wish to bitch use the form to the right (or below if you're on a cell phone) to send us your two cents. We will post it on the site if we chose. It's part of the terms of use for this site, go away if you don't like it.
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render "qna" %>
   </div>
   <div class="col-md-5 col-md-offset-1" id="div-6.2" style="margin-top: 20px; margin-bottom: 20px">
 

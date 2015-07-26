@@ -4,3 +4,18 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+.myrow {
+    font-size: 0;
+}
+.myrow > * {
+    float: none;
+    display: inline-block;
+    font-size: 14px; /* if using LESS it's quicker to just use @font-size-base */
+}
+.myrow > *:last-child {
+    vertical-align: bottom;
+}
+.myrow p:last-child {
+    margin-bottom: 0; /* optional */
+}

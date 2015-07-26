@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+// Using jQuery Event API v1.3
+$('#download').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'dl-pnp', '1');
+});
